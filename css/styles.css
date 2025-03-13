@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5px;
+  color: rgb(61, 60, 60);
+}
+.contenedor{
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1{
+  font-weight: 600px;
+  margin-left: 10px;
+}
+
+
+.agregar-text{
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.btn{
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.articulos{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articulos li{
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin:5px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 15px;
+  list-style: none;
+}
+
+.caja{
+  text-align: center  ;
+}
+
+.boton-limpiar{
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #444;
+  font-family: 'Courier New', Courier, monospace;
+} 
+
+
+.boton-limpiar:hover{
+  background-color: #f1f1f1;
+}

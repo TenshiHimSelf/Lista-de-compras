@@ -92,3 +92,11 @@ header h1{
 .boton-limpiar:hover{
   background-color: #f1f1f1;
 }
+
+.claro{
+  background-color: white !important;
+}
+
+.oscuro{
+  background-color: black !important;
+}

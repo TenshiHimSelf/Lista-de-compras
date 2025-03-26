@@ -45,7 +45,7 @@ botonVarios.addEventListener('click', function(){
  const contenedor = document.querySelector('.contenedor')
 
 function generarColorAlatorio(){
-  const letras = '0123456789ABCDF';
+  const letras = '0123456789ABCDEF';
   let color = '#';  
   for(let i = 0; i < 6; i++){
     color += letras[Math.floor(Math.random() * 16)];
@@ -57,3 +57,39 @@ botonFondo.addEventListener('click',() =>{
   const colorAleatirio = generarColorAlatorio();
   contenedor.style.backgroundColor = colorAleatirio;
 })
+
+
+
+
+
+botonFiltro.addEventListener('click', () => {
+  const articulo = cajaTexto.value.trim();
+  if (articulo.charAt(0).toLowerCase() === 'c') {
+    const nuevoElemento = document.createElement('li'); 
+    nuevoElemento.textContent = articulo; 
+    listaArticulos.appendChild(nuevoElemento);
+    cajaTexto.value = '';
+  } else {
+    alert('El articulo debe de empezar con la letra C');
+  }
+});
+
+const botonLimpiar = document.getElementById('limpiar'); 
+botonLimpiar.addEventListener('click', () => {
+  listaArticulos.innerHTML = '';
+})
+
+
+const botonTema = document.getElementById('boton-tema');
+const body = document.body;
+
+body.classList.add('claro');
+botonTema.addEventListener('click', () =>{
+  if(body.classList.contains('claro')){
+    body.classList.remove('claro');
+    body.classList.add('oscuro')
+  }else{
+    body.classList.remove('oscuro');
+    body.classList.add('claro')
+  }
+});
